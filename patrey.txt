@@ -1,0 +1,47 @@
+1. What is version control, and why is it important? (4 points)
+
+	Version control is a way of keeping record of the history of a project. It allows you to see the changes made to the project, when they happened, who changed it, and what changed. This is important because it allows you to effectively manage a project being done by multiple people in different places.
+ 
+2. What is the difference between git and GitHub? (1 point)
+
+	GitHub is a website where the repositories can be accessed while git is the language you use.
+
+3. Describe the git workflow. (4 points)
+
+	Fork, Commit, Pull Request, Commit, Merge
+This process allows for collaraboration between different people but allows different work to be done to the same project at the same time. Also this helps avoid mistakes that could derail the project completely.
+
+4. When and why would you use a branch? (2 points)
+
+	You would use a branch anytime you are making large changes to a project. This allows you to make the changes you need without changing anything that was already there.
+
+5. What is the difference between forking and cloning? (2 points)
+
+	Forking makes a seperate cloned repository that you can work in and make changes to that can later be added back into the original repository. Cloning makes a replica of the original repository but you would be unable to merge it back in after you have made changes.
+
+6. Why would you use 'git remote -v'? (2 points)
+
+	To show where your local repository is connected to.
+
+7. What are problems with this table setup, generally? (3 points)
+
+	- There no commas so the query would not run
+	- No foreign keys to connect tables
+	- Some tables seem seem to have misplaced information (ex. location_id is 	in course table but location table has no location_id
+	- Some columns do not declare the data type
+
+8. What problem would you have if you were trying to understand which students had classes in certain buildings? (2 points)
+
+	As well as having no foreign keys, the location table does not have a primary key.
+
+9. In part2.sql, create a new table that could be a logical extension of this schema. It should have at least 3 columns. (4 points)
+
+	Done.
+
+10. For each of the SQL queries, correct errors. Note, there is not necessary an error in each one. (5 points)
+
+	Done.
+
+11.In part3.sql, add the syntax to select composers for the artist 'Insane Clown Posse'. (4 points)
+
+	Done	

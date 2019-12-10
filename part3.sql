@@ -1,18 +1,29 @@
-
 SELECT *
 FROM customer;
 
-SELECT LastName, firstname, address
+SELECT LastName, FirstName, Address
 FROM Employee;
 
-SELECT Track.Name, Album.title
-FROM Track
-LEFT JOIN Album
-on Track.AlbumId = Album.AlbumId;
+SELECT t1.Name, t2.Title
+FROM Track AS t1
+LEFT JOIN Album AS t2
+ON t1.AlbumId = t2.AlbumId;
 
-SELECT t.Name, a.Title, ar.Name
-FROM Track as t
-LEFT JOIN Album as a
-on t.AlbumId = a.AlbumId
-LEFT JOIN Artist
-where GenreName = 'Punk';
+SELECT t.Name, a.Title, r.Name
+FROM Track AS t
+LEFT JOIN Album AS a
+ON t.AlbumId = a.AlbumId
+LEFT JOIN Artist AS r
+ON r.ArtistId = a.ArtistId
+WHERE GenreName = 'Punk';
+
+--add the syntax to select composers for the artist 'Insane Clown Posse'
+
+SELECT Composer
+FROM Track
+WHERE AlbumId IN(SELECT AlbumId
+				FROM Album
+				WHERE ArtistId IN(SELECT ArtistId
+								 FROM Artist
+								 WHERE Name ='Insane Clown Posse'))
+

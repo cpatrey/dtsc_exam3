@@ -26,3 +26,10 @@ CREATE TABLE location (
     building varchar
     room integer
 );
+
+CREATE TABLE teacher (
+	teacher_id INTEGER PRIMARY KEY,
+	teacher_first VARCHAR,
+	teacher_last VARCHAR,
+	salary VARCHAR
+);
